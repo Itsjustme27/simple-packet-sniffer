@@ -3,6 +3,9 @@ import os
 
 HOST = input("Enter your IP: ")
 
+if not HOST:
+    HOST = '0.0.0.0'
+
 def main():
     if os.name == 'nt':
         socket_protocol = socket.IPPROTO_IP
